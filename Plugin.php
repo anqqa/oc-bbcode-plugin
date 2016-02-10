@@ -21,8 +21,9 @@ class Plugin extends PluginBase {
         return [
             'name'        => 'BBCode',
             'description' => 'BBCode filter with custom tags.',
-            'author'      => 'Klubitus',
-            'icon'        => 'icon-bold'
+            'author'      => 'Antti Qvickström',
+            'icon'        => 'icon-bold',
+            'homepage'    => 'https://github.com/anqqa/oc-bbcode-plugin',
         ];
     }
 

@@ -10,38 +10,23 @@ class Emoticon extends Model {
     use Validation;
 
     /**
-     * @var string The database table used by the model.
+     * @var  string  The database table used by the model.
      */
     public $table = 'emoticons';
 
     /**
-     * @var array Fillable fields
+     * @var  array  Fillable fields
      */
-    protected $fillable = [
-        'name',
-        'emoticon',
-        'notation',
-        'is_secret',
-    ];
+    protected $fillable = ['name', 'emoticon', 'notation', 'is_secret'];
 
-    protected $jsonable = [
-        'notation'
-    ];
+    protected $jsonable = ['notation'];
 
     /**
      * @var array Relations
      */
-    public $hasOne = [];
-    public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
-    public $morphTo = [];
-    public $morphOne = [];
-    public $morphMany = [];
     public $attachOne = [
         'emoticon' => ['System\Models\File']
     ];
-    public $attachMany = [];
 
     public $rules = [
         'name'     => 'required',
