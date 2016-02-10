@@ -7,6 +7,14 @@ columns:
         label: Name
         searchable: true
 
-    image:
-        label: Image
-        type: section
+    emoticon:
+        label: Emoticon
+        type: partial
+
+    notation:
+        label: Notation
+        type: partial
+
+    is_hidden:
+        label: Hidden
+        type: switch
